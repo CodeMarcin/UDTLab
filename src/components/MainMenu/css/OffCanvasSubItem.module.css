@@ -1,0 +1,40 @@
+.offCanvasSubItem {
+
+}
+
+.offCanvasSubItem > ul { 
+  display: flex;
+  flex-direction: column;
+  /* padding: 0 1.5rem 1.5rem 1.5rem; */
+  background-color: #fff;
+}
+
+.offCanvasSubItem > ul > li {
+  padding: 0.2rem 0;
+  font-weight: 500;
+  font-size: 1.2rem;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.offCanvasSubItem > ul > li.active {
+  padding-left: 1rem;
+  font-weight: 600;
+  /* color: var(--clr-two); */
+}
+.offCanvasSubItem > ul > li.active > a {
+  /* color: var(--clr-two) */
+}
+
+.offCanvasSubItem > ul > li::after {
+  font-size: 1.5rem;
+  content: '+';
+  position: absolute;
+  left: -100px;
+  top: 0;
+  transition: all 0.3s;
+}
+.offCanvasSubItem > ul > li.active::after {
+  left: 0;
+}
+

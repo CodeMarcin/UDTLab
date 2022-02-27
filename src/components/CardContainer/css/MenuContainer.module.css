@@ -1,0 +1,9 @@
+.menuContainer {
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  /* border-bottom: 5px solid var(--clr-one); */
+  box-shadow: 0 -16px 0 #fff, 0 0 16px rgb(0 0 0 / 25%);
+  z-index: 2;
+  top: 0;
+}

@@ -1,0 +1,22 @@
+.offCanvasSecondSubItem > ul { 
+  display: flex;
+  flex-direction: column;
+  /* padding: 0 1.5rem 1.5rem 1.5rem; */
+  background-color: #fff;
+}
+
+.offCanvasSecondSubItem > ul > li {
+  padding: 1rem 0;
+  width: 100%;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.offCanvasSecondSubItem > ul > li:last-child {
+  /* padding-bottom: 0; */
+}
+
+.offCanvasSecondSubItem > ul > li > a {
+  display: block;
+  width: 100%;
+}

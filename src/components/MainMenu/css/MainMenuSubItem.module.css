@@ -1,0 +1,51 @@
+ul.mainMenuSubItem {
+
+}
+
+ul.mainMenuSubItem.active {
+
+}
+
+
+ul.mainMenuSubItem > li{
+
+
+}  
+@media screen and (max-width: 480px) {
+
+  ul.mainMenuSubItem {
+    position: initial;
+    box-shadow: inherit;
+    font-size: 1rem;
+  }
+
+  ul.mainMenuSubItem > li {
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+    transition: margin 0.3s;
+    position: relative;
+    margin: 0;
+  }
+
+  ul.mainMenuSubItem > li.active {
+    margin: 0 1rem;
+  }
+
+  ul.mainMenuSubItem > li.active > button {
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+
+  ul.mainMenuSubItem > li::before {
+    font-size: 1.6rem;
+    content: '+';
+    position: absolute;
+    left: -100px;
+    top: 0;
+    transition: left 0.3s;
+  }
+
+  ul.mainMenuSubItem > li.active::before {
+    left: 0px;
+  }
+}

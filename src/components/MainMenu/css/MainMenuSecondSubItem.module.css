@@ -1,0 +1,19 @@
+ul.mainMenuSecondSubItem {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+@media screen and (max-width: 480px) {
+
+  ul.mainMenuSecondSubItem {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    border-bottom: 1px solid var(--clr-five);
+    transition: all 0;
+  }
+
+  ul.mainMenuSecondSubItem > li {
+    padding: 1rem 0rem;
+  }
+
+}

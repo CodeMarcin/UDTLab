@@ -1,0 +1,44 @@
+.offert {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+.offert p {
+  color: var(--clr-one);
+
+  font-weight: 500;
+  margin: 5px 0 30px 0;
+}
+
+.offert h1 {
+  width: 100%;
+  color: var(--clr-one);
+  font-family: var(--fnt-one);
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 35px;
+}
+
+.offert form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--clr-one);
+  padding: 40px 20px;
+}
+
+.offert input[type='email'] {
+  border: none;
+  border-bottom: 1px solid var(--clr-one);
+  color: var(--clr-one);
+  width: 50%;
+  padding: 13px;
+  font-weight: 200;
+
+  outline: none;
+}
+
+.offert input[type='email']:focus {
+}

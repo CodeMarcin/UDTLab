@@ -1,0 +1,16 @@
+.rightBanner {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.rightBanner > img {
+  width: 70%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .rightBanner > img {
+    width: 100%;
+  }
+}

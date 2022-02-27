@@ -1,0 +1,64 @@
+.singleQuestion {
+  display: flex;
+  flex-direction: column;
+}
+
+.singleQuestion > .question {
+  font-weight: 900;
+  font-family: var(--fnt-two);
+
+}
+
+.singleQuestion > ul {
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.singleQuestion > ul > li {
+  padding: 0.5rem 0;
+  font-family: var(--fnt-five);
+  width: 90%;
+  
+}
+
+.singleQuestion > ul > li > label {
+  display: flex;
+  align-items: flex-start;
+  color: #fff;
+  cursor: pointer;
+}
+
+.singleQuestion > ul > li > label > span {
+  background-color: var(--clr-one);
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+  display: block;
+}
+
+.singleQuestion > ul > li > label > span:nth-last-child(2) {
+  width: 100%;
+  font-weight: 400;
+}
+
+.singleQuestion > ul > li > label > span.active {
+  background-color: var(--clr-two);
+  font-weight: 700;
+}
+
+.singleQuestion > ul > li > label > span.correct {
+  background-color: green;
+  font-weight: 700;
+}
+
+.singleQuestion > ul > li > label > span.notCorrect {
+  background-color: red;
+  font-weight: 700;
+}
+
+.singleQuestion > ul > li > label > input[type="radio"] {
+  display: none;
+
+}

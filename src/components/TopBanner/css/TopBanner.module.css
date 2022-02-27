@@ -1,0 +1,12 @@
+.topBanner {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .topBanner {
+    flex-direction: column;
+  }
+}
+

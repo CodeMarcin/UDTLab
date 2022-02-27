@@ -1,0 +1,24 @@
+.littleBanner {
+  display: flex;
+  width: 100%;
+}
+
+.leftLittleBanner {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+}
+
+.leftLittleBanner > img {
+  width: 100%;
+  height: auto;
+}
+
+.rightLittleBanner { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 70%;
+  padding: 1rem 5rem;
+}

@@ -1,0 +1,28 @@
+.leftBanner {
+  width: 50%;
+  color: var(--clr-five);
+  font-weight: 600;
+}
+
+.leftBanner > h1 {
+  color: var(--clr-three);
+  font-weight: 900;
+}
+
+.leftBanner > h1, .leftBanner > p, .leftBanner > button {
+  margin: 2.5rem 0;
+}
+
+@media screen and (max-width: 480px) {
+
+  .leftBanner > button {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .leftBanner { 
+     width: 100%;
+  }
+
+}

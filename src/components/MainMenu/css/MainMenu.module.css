@@ -1,0 +1,147 @@
+.mainMenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 0rem;
+  /* position: relative; */
+}
+
+.mainMenu > .logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.mainMenu > .logo > h3 {
+  border: 5px solid var(--clr-one);
+  padding: 0 1rem;
+  text-align: center;
+  font-weight: 900;
+}
+
+.mainMenu > .logo > img {
+  width: 50px;
+  height: 50px;
+}
+
+.mainMenu > ul {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: var(--fnt-two);
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+.mainMenu > ul.active {
+  top: 69px;
+}
+
+.mainMenu > ul > li {
+ 
+}
+
+.mainMenu ul > li button {
+  background-color: inherit;
+  border: inherit;
+  cursor: pointer;
+  font-size: 1.7rem;
+  /* font-weight: 400; */
+  font-family: var(--fnt-two);
+}
+
+.mainMenu > ul > li.active > button{
+  font-weight: 700;
+}
+
+.mainMenu > .hamburger {
+  /* display: none; */
+}
+
+.mainMenu > .hamburger > img {
+  width: 34px;
+  height: 34px;
+}
+
+@media screen and (max-width: 480px) {
+  .mainMenu > .logo {
+    width: auto;
+  }
+
+  .mainMenu > ul {
+    position: absolute;
+    top: -1000px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 50px);
+    padding-bottom: 2rem;
+    overflow: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #fff;
+    transition: top 0.5s;
+    box-shadow: 0 -16px 0 #fff, 0 0 16px rgb(0 0 0 / 25%);
+  }
+
+  .mainMenu > ul.active {
+    top: 69px;
+  }
+
+  .mainMenu > ul > li {
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: margin 0.3s;
+    position: relative;
+  }
+
+  .mainMenu > ul > li.active {
+    margin: 0 1rem;
+  }
+
+  .mainMenu ul > li button {
+    font-size: 1.4rem;
+    font-weight: 500;
+  }
+
+  .mainMenu > ul > li.active:active,
+  .mainMenu > ul {
+  }
+
+  .mainMenu > ul > li::before {
+    font-size: 1.5rem;
+    content: '+';
+    position: absolute;
+    left: -100px;
+    top: 0;
+    transition: left 0.3s;
+  }
+
+  .mainMenu > ul > li.active::before {
+    left: 0;
+  }
+
+  .mainMenu > .hamburger {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .mainMenu > .logo {
+    width: auto;
+  }
+
+  .mainMenu > ul > li {
+    /* display: none; */
+  }
+
+  .mainMenu > ul > li.hamburger {
+    display: block;
+  }
+}
